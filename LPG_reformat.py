@@ -119,32 +119,6 @@ def merge_xmls(sorted_xml_files, output_dir):
                 # If it doesn't exist, append the new element
                 root.append(elem)
 
-    # Add OPLS CustomNonbondedForce to merged xml
-    for nonbondedforce in tree.findall('NonbondedForce'):
-        atom_types = []
-        for nbf_atom_type in nonbondedforce:
-            atom_types.append(nbf_atom_type.attrib.copy())
-            nbf_atom_type.attrib['sigma'] = '1.0'
-            nbf_atom_type.attrib['epsilon'] = '0.0'
-        root = tree.getroot()
-        customnonbondedforce = ET.Element('CustomNonbondedForce')
-        customnonbondedforce.attrib['energy'] = '4*E*((S/r)^12-(S/r)^6); E=sqrt(eps1*eps2); S=sqrt(sig1*sig2)'
-        customnonbondedforce.attrib['bondCutoff'] = '3'
-        customnonbondedforce.attrib['coulomb14scale'] = '0.0'
-        customnonbondedforce.attrib['lj14scale'] = '0.5'
-        ppp1 = ET.SubElement(customnonbondedforce, 'PerParticleParameter')
-        ppp1.attrib['name'] = 'sig'
-        ppp2 = ET.SubElement(customnonbondedforce, 'PerParticleParameter')
-        ppp2.attrib['name'] = 'eps'
-        for nbf_atom_type in atom_types:
-            del nbf_atom_type['charge']
-            nbf_atom_type['sig'] = nbf_atom_type.pop('sigma')
-            nbf_atom_type['eps'] = nbf_atom_type.pop('epsilon')
-            cnbf_atom_type = ET.SubElement(customnonbondedforce, 'Atom')
-            for attribute in nbf_atom_type.keys():
-                cnbf_atom_type.attrib[attribute] = nbf_atom_type[attribute]
-        root.append(customnonbondedforce)
-    
     ET.indent(tree, '  ')
     tree.write(output, encoding="utf-8", xml_declaration=True)
     return output
