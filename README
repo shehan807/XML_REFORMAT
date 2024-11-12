@@ -1,0 +1,6 @@
+First run...
+python combine_xmls.py
+
+Then run...
+python make_residue_xml.py
+
