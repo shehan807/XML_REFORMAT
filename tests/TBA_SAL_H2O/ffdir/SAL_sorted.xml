@@ -1,0 +1,150 @@
+<ForceField>
+<AtomTypes>
+<Type name="SAL_800" class="O800_SAL" element="O" mass="15.999000" />
+<Type name="SAL_801" class="C801_SAL" element="C" mass="12.011000" />
+<Type name="SAL_802" class="O802_SAL" element="O" mass="15.999000" />
+<Type name="SAL_803" class="C803_SAL" element="C" mass="12.011000" />
+<Type name="SAL_804" class="C804_SAL" element="C" mass="12.011000" />
+<Type name="SAL_805" class="C805_SAL" element="C" mass="12.011000" />
+<Type name="SAL_806" class="C806_SAL" element="C" mass="12.011000" />
+<Type name="SAL_807" class="C807_SAL" element="C" mass="12.011000" />
+<Type name="SAL_808" class="C808_SAL" element="C" mass="12.011000" />
+<Type name="SAL_809" class="O809_SAL" element="O" mass="15.999000" />
+<Type name="SAL_810" class="H810_SAL" element="H" mass="1.008000" />
+<Type name="SAL_811" class="H811_SAL" element="H" mass="1.008000" />
+<Type name="SAL_812" class="H812_SAL" element="H" mass="1.008000" />
+<Type name="SAL_813" class="H813_SAL" element="H" mass="1.008000" />
+<Type name="SAL_814" class="H814_SAL" element="H" mass="1.008000" />
+</AtomTypes>
+<Residues>
+<Residue name="SAL">
+<Atom name="O00" type="SAL_800" />
+<Atom name="C01" type="SAL_801" />
+<Atom name="O02" type="SAL_802" />
+<Atom name="C03" type="SAL_803" />
+<Atom name="C04" type="SAL_804" />
+<Atom name="C05" type="SAL_805" />
+<Atom name="C06" type="SAL_806" />
+<Atom name="C07" type="SAL_807" />
+<Atom name="C08" type="SAL_808" />
+<Atom name="O09" type="SAL_809" />
+<Atom name="H0A" type="SAL_810" />
+<Atom name="H0B" type="SAL_811" />
+<Atom name="H0C" type="SAL_812" />
+<Atom name="H0D" type="SAL_813" />
+<Atom name="H0E" type="SAL_814" />
+<Bond from="0" to="1" />
+<Bond from="1" to="2" />
+<Bond from="1" to="3" />
+<Bond from="3" to="4" />
+<Bond from="4" to="5" />
+<Bond from="5" to="6" />
+<Bond from="6" to="7" />
+<Bond from="3" to="8" />
+<Bond from="8" to="9" />
+<Bond from="4" to="10" />
+<Bond from="5" to="11" />
+<Bond from="6" to="12" />
+<Bond from="7" to="13" />
+<Bond from="9" to="14" />
+<Bond from="7" to="8" />
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="C801_SAL" class2="O800_SAL" length="0.125000" k="548940.800000" />
+<Bond class1="C803_SAL" class2="C801_SAL" length="0.149000" k="334720.000000" />
+<Bond class1="C804_SAL" class2="C803_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="C805_SAL" class2="C804_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="C806_SAL" class2="C805_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="C807_SAL" class2="C806_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="C808_SAL" class2="C803_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="C808_SAL" class2="C807_SAL" length="0.140000" k="392459.200000" />
+<Bond class1="H810_SAL" class2="C804_SAL" length="0.108000" k="307105.600000" />
+<Bond class1="H811_SAL" class2="C805_SAL" length="0.108000" k="307105.600000" />
+<Bond class1="H812_SAL" class2="C806_SAL" length="0.108000" k="307105.600000" />
+<Bond class1="H813_SAL" class2="C807_SAL" length="0.108000" k="307105.600000" />
+<Bond class1="H814_SAL" class2="O809_SAL" length="0.094500" k="462750.400000" />
+<Bond class1="O802_SAL" class2="C801_SAL" length="0.125000" k="548940.800000" />
+<Bond class1="O809_SAL" class2="C808_SAL" length="0.136400" k="376560.000000" />
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle class1="C801_SAL" class2="C803_SAL" class3="C804_SAL" angle="2.094395" k="711.280000" />
+<Angle class1="C801_SAL" class2="C803_SAL" class3="C808_SAL" angle="2.094395" k="711.280000" />
+<Angle class1="C803_SAL" class2="C804_SAL" class3="C805_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C803_SAL" class2="C808_SAL" class3="O809_SAL" angle="2.094395" k="585.760000" />
+<Angle class1="C803_SAL" class2="C804_SAL" class3="H810_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C803_SAL" class2="C808_SAL" class3="C807_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C804_SAL" class2="C805_SAL" class3="C806_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C804_SAL" class2="C805_SAL" class3="H811_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C804_SAL" class2="C803_SAL" class3="C808_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C805_SAL" class2="C806_SAL" class3="C807_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C805_SAL" class2="C806_SAL" class3="H812_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C805_SAL" class2="C804_SAL" class3="H810_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C806_SAL" class2="C807_SAL" class3="H813_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C806_SAL" class2="C807_SAL" class3="C808_SAL" angle="2.094395" k="527.184000" />
+<Angle class1="C806_SAL" class2="C805_SAL" class3="H811_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C807_SAL" class2="C806_SAL" class3="H812_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="C807_SAL" class2="C808_SAL" class3="O809_SAL" angle="2.094395" k="585.760000" />
+<Angle class1="C808_SAL" class2="O809_SAL" class3="H814_SAL" angle="1.972222" k="292.880000" />
+<Angle class1="C808_SAL" class2="C807_SAL" class3="H813_SAL" angle="2.094395" k="292.880000" />
+<Angle class1="O800_SAL" class2="C801_SAL" class3="O802_SAL" angle="2.199115" k="669.440000" />
+<Angle class1="O800_SAL" class2="C801_SAL" class3="C803_SAL" angle="2.042035" k="585.760000" />
+<Angle class1="O802_SAL" class2="C801_SAL" class3="C803_SAL" angle="2.042035" k="585.760000" />
+</HarmonicAngleForce>
+<PeriodicTorsionForce>
+<Proper class1="C801_SAL" class2="O800_SAL" class3="O802_SAL" class4="C803_SAL" k1="0.000000" k2="43.932000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C803_SAL" class2="C808_SAL" class3="C801_SAL" class4="C804_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C804_SAL" class2="C803_SAL" class3="C801_SAL" class4="O800_SAL" k1="0.000000" k2="4.393200" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C804_SAL" class2="C803_SAL" class3="C801_SAL" class4="O802_SAL" k1="0.000000" k2="4.393200" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C804_SAL" class2="H810_SAL" class3="C803_SAL" class4="C805_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C805_SAL" class2="C804_SAL" class3="C803_SAL" class4="C801_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C805_SAL" class2="H811_SAL" class3="C804_SAL" class4="C806_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C806_SAL" class2="C805_SAL" class3="C804_SAL" class4="C803_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C806_SAL" class2="C807_SAL" class3="C808_SAL" class4="C803_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C806_SAL" class2="H812_SAL" class3="C805_SAL" class4="C807_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C807_SAL" class2="C806_SAL" class3="C805_SAL" class4="C804_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C807_SAL" class2="C808_SAL" class3="C803_SAL" class4="C801_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C807_SAL" class2="C808_SAL" class3="C803_SAL" class4="C804_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C807_SAL" class2="C808_SAL" class3="H813_SAL" class4="C806_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C808_SAL" class2="C803_SAL" class3="C801_SAL" class4="O800_SAL" k1="0.000000" k2="4.393200" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C808_SAL" class2="C803_SAL" class3="C801_SAL" class4="O802_SAL" k1="0.000000" k2="4.393200" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C808_SAL" class2="C803_SAL" class3="C804_SAL" class4="C805_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C808_SAL" class2="C807_SAL" class3="C806_SAL" class4="C805_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="C808_SAL" class2="O809_SAL" class3="C803_SAL" class4="C807_SAL" k1="0.000000" k2="10.460000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H810_SAL" class2="C804_SAL" class3="C803_SAL" class4="C801_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H810_SAL" class2="C804_SAL" class3="C803_SAL" class4="C808_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H810_SAL" class2="C804_SAL" class3="C805_SAL" class4="C806_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H811_SAL" class2="C805_SAL" class3="C804_SAL" class4="C803_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H811_SAL" class2="C805_SAL" class3="C804_SAL" class4="H810_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H811_SAL" class2="C805_SAL" class3="C806_SAL" class4="C807_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H812_SAL" class2="C806_SAL" class3="C805_SAL" class4="C804_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H812_SAL" class2="C806_SAL" class3="C805_SAL" class4="H811_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H812_SAL" class2="C806_SAL" class3="C807_SAL" class4="C808_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H813_SAL" class2="C807_SAL" class3="C806_SAL" class4="C805_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Proper class1="H813_SAL" class2="C807_SAL" class3="C806_SAL" class4="H812_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="H813_SAL" class2="C807_SAL" class3="C808_SAL" class4="C803_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="H813_SAL" class2="C807_SAL" class3="C808_SAL" class4="O809_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="H814_SAL" class2="O809_SAL" class3="C808_SAL" class4="C803_SAL" k1="0.000000" k2="3.518744" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="H814_SAL" class2="O809_SAL" class3="C808_SAL" class4="C807_SAL" k1="0.000000" k2="3.518744" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="O809_SAL" class2="C808_SAL" class3="C803_SAL" class4="C801_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="O809_SAL" class2="C808_SAL" class3="C803_SAL" class4="C804_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+<Improper class1="O809_SAL" class2="C808_SAL" class3="C807_SAL" class4="C806_SAL" k1="0.000000" k2="15.167000" k3="0.000000" k4="0.000000" periodicity1="1" periodicity2="2" periodicity3="3" periodicity4="4" phase1="0.00" phase2="3.141592653589793" phase3="0.00" phase4="3.141592653589793" />
+</PeriodicTorsionForce>
+<NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+<Atom type="SAL_800" charge="-0.607800" sigma="0.296000" epsilon="0.878640" />
+<Atom type="SAL_801" charge="0.446900" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_802" charge="-0.607800" sigma="0.296000" epsilon="0.878640" />
+<Atom type="SAL_803" charge="-0.093000" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_804" charge="-0.095700" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_805" charge="-0.177600" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_806" charge="-0.142700" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_807" charge="-0.215600" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_808" charge="0.108000" sigma="0.355000" epsilon="0.292880" />
+<Atom type="SAL_809" charge="-0.432100" sigma="0.312000" epsilon="0.711280" />
+<Atom type="SAL_810" charge="0.149200" sigma="0.242000" epsilon="0.125520" />
+<Atom type="SAL_811" charge="0.105600" sigma="0.242000" epsilon="0.125520" />
+<Atom type="SAL_812" charge="0.100500" sigma="0.242000" epsilon="0.125520" />
+<Atom type="SAL_813" charge="0.108600" sigma="0.242000" epsilon="0.125520" />
+<Atom type="SAL_814" charge="0.353500" sigma="0.000000" epsilon="0.000000" />
+</NonbondedForce>
+</ForceField>
