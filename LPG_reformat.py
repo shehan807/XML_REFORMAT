@@ -15,7 +15,7 @@ import os
 import shutil
 import argparse
 from xml.etree import ElementTree as ET
-
+from datetime import datetime
 
 def parser():
     """
@@ -36,7 +36,8 @@ def parser():
         help="List of input XML files to be processed and merged.",
     )
     parser.add_argument("-o", "--output", help="Name of the output XML file.")
-
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M")
     args = parser.parse_args()
     if not args.xml_files:
         xmls = [f for f in os.listdir(os.getcwd()) if f.endswith(".xml")]
@@ -45,12 +46,12 @@ def parser():
         args.xml_files = sorted(args.xml_files)
     if not args.output:
         if os.path.exists("ffdir"):
-            shutil.rmtree("ffdir")
+            shutil.move("ffdir", f"ffdir_archive_{timestamp}")
         os.makedirs("ffdir")
         args.output = os.path.join(os.getcwd(), "ffdir")
     else:
         if os.path.exists(args.output):
-            shutil.rmtree(args.output)
+            shutil.move(args.output, f"{args.output}_archive_{timestamp}")
         os.makedirs(args.output)
         args.output = os.path.join(os.getcwd(), args.output)
 
