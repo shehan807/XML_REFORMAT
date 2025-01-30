@@ -170,7 +170,7 @@ def make_res_file(output):
 
         ET.indent(new_tree, "  ")
         new_tree.write(residue_file, encoding="utf-8", xml_declaration=True)
-
+    print(f"created {residue_file}")
 
 def main():
     """
@@ -182,8 +182,15 @@ def main():
     # Parse command-line arguments
     args = parser()
     sorted_xml_files = create_sorted_xmls(args.xml_files, args.output)
-    ff_xml_file = merge_xmls(sorted_xml_files, args.output)
-    make_res_file(ff_xml_file)
+    print(sorted_xml_files)
+    # ff_xml_file = merge_xmls(sorted_xml_files, args.output) # this causes a bug in the NonbondedForce 14scaled parameters
+    for xml in sorted_xml_files:
+        make_res_file(xml)
+    #try: 
+    #    make_res_file(sorted_xml_files)
+    #except: 
+
+    #    for xml in 
 
 
 if __name__ == "__main__":
